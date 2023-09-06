@@ -1,4 +1,4 @@
-import Auth from "../components/auth";
+import Auth from "../components/Auth";
 /* eslint-disable react/prop-types */
 
 const Login = (props) => {
