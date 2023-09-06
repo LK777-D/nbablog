@@ -3,7 +3,7 @@
 import "./MVPCard.css";
 
 const MVPCard = (props) => {
-  const className = `${props.shadow} relative flex flex-col gap-2 text-center mb-14 card w-[17rem] h-[17rem] autox  border `;
+  const className = `${props.shadow} z-0 relative flex flex-col gap-2 text-center mb-14 card w-[17rem] h-[17rem] autox  border `;
 
   return (
     <div className={className}>

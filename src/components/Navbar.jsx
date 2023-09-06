@@ -19,7 +19,7 @@ const Navbar = (props) => {
   const smNavClassName = ` $ bg-zinc-900 anim  md:hidden text-center p-5 w-[100vw] h-[calc(100vh-5rem)] absolute left-0 flex flex-col gap-10 top-[5rem] z-10`;
 
   return (
-    <nav className="  sticky z-20 top-0 nav  flex  justify-around items-center h-[5rem]  text-white  bg-neutral-950  ">
+    <nav className="  sticky z-50 top-0 nav  flex  justify-around items-center h-[5rem]  text-white  bg-neutral-950  ">
       <div
         onClick={() => setNavIsOpen(!navIsOpen)}
         className=" md:hidden cursor-pointer flex flex-col gap-2"
@@ -110,14 +110,14 @@ const Navbar = (props) => {
           </div>
         </div>
       )}
-      <Link
+      <div
         onClick={() => setNavIsOpen(false)}
         to="/"
-        className="logo cursor-pointer h-[3rem] items-center flex "
+        className="logo cursor-pointer h-[3rem] max-w-[4rem] items-center flex "
       >
         <img src={logo2} className="w-full h-full" />
         <span className="text-2xl">NBA</span>
-      </Link>
+      </div>
       <div className="flex gap-5 text-[1.1rem] ">
         <NavLink
           onClick={() => setNavIsOpen(false)}
