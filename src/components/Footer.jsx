@@ -62,7 +62,7 @@ const Footer = () => {
           <div className="mt-4">
             <input
               type="email"
-              placeholder="Enter your email"
+              placeholder="Enter your E-mail"
               className="bg-gray-800 text-white rounded-lg p-3 w-full text-lg"
             />
             <button className="mt-4 bg-zinc-500 hover:bg-zinc-600 text-white px-6 py-3 rounded-md text-lg">
