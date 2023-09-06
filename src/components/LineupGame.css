@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+.nbagame {
+  font-family: "Black Ops One", cursive;
+}
+.gamecardS {
+  box-shadow: 0px 0px 25px 10px rgba(190, 16, 206, 0.3);
+  transition: all 0.3s;
+}
+.gamecardS:hover {
+  box-shadow: 0px 0px 25px 10px rgba(190, 34, 204, 0.5);
+  transform: scale(1.03);
+}
+.gamecardA {
+  box-shadow: 0px 0px 25px 10px rgba(7, 146, 14, 0.616);
+  transition: all 0.3s;
+}
+.gamecardA:hover {
+  box-shadow: 0px 0px 25px 10px rgba(20, 146, 26, 0.816);
+  transform: scale(1.03);
+}
+.gamecardB {
+  box-shadow: 0px 0px 25px 10px rgba(170, 173, 17, 0.808);
+  transition: all 0.3s;
+}
+.gamecardB:hover {
+  box-shadow: 0px 0px 25px 10px rgba(193, 196, 40, 0.908);
+  transform: scale(1.03);
+}
+.gamecardC {
+  box-shadow: 0px 0px 25px 10px rgba(20, 89, 179, 0.808);
+  transition: all 0.3s;
+}
+.gamecardC:hover {
+  box-shadow: 0px 0px 25px 10px rgba(41, 103, 184, 0.958);
+  transform: scale(1.03);
+}
+.gamecardD {
+  box-shadow: 0px 0px 25px 10px rgba(224, 18, 18, 0.708);
+  transition: all 0.3s;
+}
+.gamecardD:hover {
+  box-shadow: 0px 0px 25px 10px rgba(236, 26, 26, 0.808);
+  transform: scale(1.03);
+}
+.finalshadow {
+  box-shadow: 0px 0px 13px 7px rgba(32, 10, 230, 0.743);
+  transition: all 0.3s;
+}
+.finalshadow:hover {
+  box-shadow: 0px 0px 13px 5px rgba(51, 32, 228, 0.943);
+  transform: scale(1.03);
+}
+
+.innershadow {
+  box-shadow: inset 0px 0px 12px 5px rgba(7, 146, 14, 0.616);
+}
+
+.tiersbg {
+  background: rgb(100, 28, 116);
+  background: linear-gradient(
+    90deg,
+    rgba(100, 28, 116, 1) 18%,
+    rgba(129, 22, 92, 1) 54%,
+    rgba(97, 10, 80, 1) 86%
+  );
+  opacity: 0.8;
+  transition: opacity 0.4s ease;
+}
+
+.tiersbg:hover {
+  opacity: 1;
+}

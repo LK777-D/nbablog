@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+.nav {
+  font-family: "Space Grotesk", sans-serif;
+}
+.thin {
+  font-family: "Montserrat", sans-serif;
+}
+
+.anim {
+  animation: navbarap 0.7s ease-in-out;
+}
+.closeAnim {
+  animation: navbarClose 0.7s ease-in-out;
+}
+
+@keyframes navbarClose {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes navbarap {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

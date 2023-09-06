@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Phudu&display=swap");
+
+#root {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  min-height: 100vh;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Chakra Petch", sans-serif;
+  box-sizing: border-box;
+  background: rgb(22, 22, 24);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 22, 24, 1) 17%,
+    rgba(17, 16, 18, 1) 48%,
+    rgba(16, 13, 17, 1) 73%
+  );
+}
+
+.hover-scale {
+  transition: transform 0.2s ease-in-out;
+}
+.hover-scale:hover {
+  transform: scale(1.2);
+}
+/* .bgimg {
+  background-image: url("./assets/bus.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.autox {
+  margin: 0 auto;
+}
+.autox::-webkit-scrollbar {
+  width: 300%;
+}
+.borderpl {
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+}
+.showbg1 {
+  background-image: url("./assets/showcase.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.showbg2 {
+  background-image: url("./assets/header2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.showbg3 {
+  background-image: url("./assets/show32.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.borderup {
+  border-top: 1px solid rgb(211, 211, 211, 0.5);
+}
+aside {
+  margin: 0;
+}
+.gradgr {
+  background: rgb(28, 116, 50);
+  background: linear-gradient(
+    90deg,
+    rgba(28, 116, 50, 1) 20%,
+    rgba(43, 129, 22, 1) 47%,
+    rgba(35, 97, 10, 1) 81%
+  );
+}
+.flexq {
+  display: flex;
+}
+/* In your custom CSS file or <style> tag */
+.old-school {
+  text-shadow:
+    3px 3px 0 #000,
+    4px 4px 0 #ff0000,
+    5px 5px 0 #00ff00;
+  /* Adjust the values and colors as needed */
+}
+
+.nba2000s {
+  text-shadow:
+    3px 3px 0 #0a3157,
+    4px 4px 0 #c7ca0d,
+    5px 5px 0 #1d084d;
+}
+.nba2000s2 {
+  text-shadow:
+    3px 3px 0 #152e07,
+    4px 4px 0 #279e0f,
+    5px 5px 0 #040547;
+}
+.nbaallstar {
+  text-shadow:
+    0px 2px 0 lightskyblue,
+    0px 3px 0 lightskyblue;
+}
+.font1 {
+  font-family: "DM Sans", sans-serif;
+}
+.font2 {
+  font-family: "Phudu", cursive;
+}

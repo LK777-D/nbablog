@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+.cont {
+  overflow: hidden;
+  font-family: "Black Ops One", cursive;
+}
+.image {
+  transition: transform 7s ease;
+}
