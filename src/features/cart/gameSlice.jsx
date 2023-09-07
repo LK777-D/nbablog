@@ -6,6 +6,7 @@ const initialState = {
   existingPlayerAlert: false,
   lineupFullAlert: false,
   moneyAlert: false,
+  modal: false,
 };
 
 const gameSlice = createSlice({
@@ -49,8 +50,26 @@ const gameSlice = createSlice({
       state.moneyAlert = false;
       state.lineupFullAlert = false;
     },
+    openModal: (state) => {
+      state.modal = true;
+    },
+    closeModal: (state) => {
+      state.modal = false;
+    },
+    clearLineup: (state) => {
+      state.modal = false;
+      state.selectedPlayers = [];
+      state.money = 100;
+    },
   },
 });
 
-export const { draftPlayer, undraftPlayer, clearAlerts } = gameSlice.actions;
+export const {
+  draftPlayer,
+  undraftPlayer,
+  clearAlerts,
+  openModal,
+  clearLineup,
+  closeModal,
+} = gameSlice.actions;
 export default gameSlice.reducer;

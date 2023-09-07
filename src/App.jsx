@@ -78,6 +78,7 @@ function App() {
         <Route path="/nbaquiz" element={<Quiz />} />
         <Route path="/game" element={<Game />} />
         <Route path="/blog" element={<Blog />} />
+
         <Route
           path="/auth"
           element={

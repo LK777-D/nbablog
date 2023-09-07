@@ -1,9 +1,14 @@
 import "./LineupGame.css";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { useDispatch } from "react-redux";
-import { draftPlayer, undraftPlayer } from "../features/cart/gameSlice";
+import {
+  draftPlayer,
+  undraftPlayer,
+  openModal,
+} from "../features/cart/gameSlice";
 import { UilAngleDoubleDown } from "@iconscout/react-unicons";
-import Showcase from "../UI/Showcase";
+import ModalOverlay from "../UI/Modal";
+import { useEffect } from "react";
 
 const players = [
   {
@@ -214,7 +219,7 @@ const tierC = players.filter((player) => player.tier === "C");
 const tierD = players.filter((player) => player.tier === "D");
 
 const LineupGame = () => {
-  const { selectedPlayers, money } = useSelector((store) => store.game);
+  const { selectedPlayers, money, modal } = useSelector((store) => store.game);
 
   const dispatch = useDispatch();
   const addPlayer = (player) => {
@@ -223,9 +228,19 @@ const LineupGame = () => {
   const removePlayer = (player) => {
     dispatch(undraftPlayer(player));
   };
-  // console.log(selectedPlayers);
+  const openModalOverlay = () => dispatch(openModal());
+
+  useEffect(() => {
+    if (modal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  }, [modal]);
+
   return (
     <section className="nbagame text-white py-8   ">
+      {modal && <ModalOverlay modal={modal} />}
       <div className="flex flex-col gap-5 lg:text-xl ">
         <div className="text-center">
           <h1 className="text-2xl text-zinc-300 lg:text-4xl mb-7">
@@ -384,6 +399,14 @@ const LineupGame = () => {
             </div>
           ))}
         </div>
+        {selectedPlayers.length > 0 && (
+          <button
+            className="tiersbg p-2 rounded-xl mt-3"
+            onClick={openModalOverlay}
+          >
+            Clear Lineup
+          </button>
+        )}
       </div>
     </section>
   );

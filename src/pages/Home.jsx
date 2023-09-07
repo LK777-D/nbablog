@@ -55,18 +55,50 @@ const Home = () => {
         text3="NBA ALL-STAR 2024 - INDIANA."
         linktext="Read More"
       />
-      <section className=" mb-5 w-11/12 autox flex flex-col gap-5 py-3  rounded-md bg-zinc-900 ">
+      <section className=" mb-5 w-11/12 h-auto autox flex flex-col gap-5 py-3  rounded-md  ">
         <h1 className="text-white text-xl text-center p-3 ">
           2023-2024 League MVP ? Vote For Your Favorite
         </h1>
         <div className="flex flex-col md:flex-row gap-15 w-full min-h[10rem] ">
-          <MVPCard player="Luka Doncic" img={doncic} shadow="doncicshadow" />
-          <MVPCard player="Jason Tatum" img={tatum} shadow="tatumshadow" />
-          <MVPCard player="Nikola Jokic" img={jokic} shadow="jokicshadow" />
-          <MVPCard player="Ja Morant" img={morant} shadow="jokicshadow" />
+          <MVPCard
+            player="Luka Doncic"
+            img={doncic}
+            shadow="doncicshadow"
+            color="doncic"
+            ppg="32.4"
+            rpg="8.6"
+            apg="8.0"
+          />
+          <MVPCard
+            player="Jason Tatum"
+            img={tatum}
+            shadow="tatumshadow"
+            color="tatum"
+            ppg="30.1"
+            rpg="8.8"
+            apg="4.6"
+          />
+          <MVPCard
+            player="Nikola Jokic"
+            img={jokic}
+            shadow="jokicshadow"
+            color="jokic"
+            ppg="24.5"
+            rpg="11.8"
+            apg="9.8"
+          />
+          <MVPCard
+            player="Ja Morant"
+            color="doncic"
+            img={morant}
+            shadow="jokicshadow"
+            ppg="26.2"
+            rpg="5.9"
+            apg="8.1"
+          />
         </div>
       </section>
-
+      <div className="bg-zinc-500 h-[1px] w-11/12 autox "></div>
       <section className=" w-full my-10 md:flex md:items-center md:justify-around ">
         <Standings setSeason={setSeason} east={east} west={west} />
         <Headlines />

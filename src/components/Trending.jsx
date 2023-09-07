@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Trending = (props) => {
   return (
-    <section className="text-white   min-h-[20rem]  flex flex-col gap-7 p-3 ">
+    <section className="text-white   min-h-[20rem]   flex flex-col gap-7 p-3 ">
       <h1 className="text-2xl underline ml-8">{props.heading}</h1>
       <div className=" h-auto w-full  text-center flex justify-center overflow-scroll  ">
         <div className=" min-w-[14rem] h-[10rem] text-sm p-2 md:min-w-[40rem] md:min-h-[40rem]  ">

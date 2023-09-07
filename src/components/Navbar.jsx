@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import logo2 from "../assets/logo2.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { UilFacebook } from "@iconscout/react-unicons";
 import { UilInstagram } from "@iconscout/react-unicons";
 import { UilDiscord } from "@iconscout/react-unicons";
@@ -18,6 +18,13 @@ const Navbar = (props) => {
 
   const smNavClassName = ` $ bg-zinc-900 anim  md:hidden text-center p-5 w-[100vw] h-[calc(100vh-5rem)] absolute left-0 flex flex-col gap-10 top-[5rem] z-10`;
 
+  useEffect(() => {
+    if (navIsOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  }, [navIsOpen]);
   return (
     <nav className="  sticky z-50 top-0 nav  flex  justify-around items-center h-[5rem]  text-white  bg-neutral-950  ">
       <div
