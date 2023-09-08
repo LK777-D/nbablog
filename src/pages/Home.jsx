@@ -57,7 +57,7 @@ const Home = () => {
       />
       <section className=" mb-5 w-11/12 h-auto autox flex flex-col gap-5 py-3  rounded-md  ">
         <h1 className="text-white text-xl text-center p-3 ">
-          2023-2024 League MVP ? Vote For Your Favorite
+          2023-2024 League MVP ? Experts Prediction
         </h1>
         <div className="flex flex-col md:flex-row gap-15 w-full min-h[10rem] ">
           <MVPCard

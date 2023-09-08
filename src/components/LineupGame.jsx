@@ -1,11 +1,7 @@
 import "./LineupGame.css";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { useDispatch } from "react-redux";
-import {
-  draftPlayer,
-  undraftPlayer,
-  openModal,
-} from "../features/cart/gameSlice";
+import { draftPlayer, undraftPlayer, openModal } from "../features/gameSlice";
 import { UilAngleDoubleDown } from "@iconscout/react-unicons";
 import ModalOverlay from "../UI/Modal";
 import { useEffect } from "react";

@@ -29,7 +29,6 @@ const Header = () => {
   ];
 
   useEffect(() => {
-    // setScaleTrigger(true);
     const timerId = setTimeout(() => {
       if (index < header.length - 1) {
         setIndex((prevIndex) => prevIndex + 1);

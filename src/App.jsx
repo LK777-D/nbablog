@@ -18,6 +18,7 @@ import Quiz from "./pages/Quiz";
 import Game from "./pages/Game";
 import Blog from "./pages/Blog";
 import Login from "./pages/Login";
+import ScrollFromTop from "./components/ScrollFromTop";
 
 function App() {
   const [logInEmail, setLogInEmail] = useState("");
@@ -71,7 +72,7 @@ function App() {
   return (
     <>
       <Navbar logout={logout} user={user} />
-
+      <ScrollFromTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/teams/:team" element={<PlayerInfo />} />

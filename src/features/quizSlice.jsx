@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import nbaQuizQuestions from "../../quizQuestion";
+
 import {
   legendPlayers,
   legendsTeams,
@@ -9,7 +9,7 @@ import {
   nba2010s2,
   nbaAllStar1,
   nbaAllStar2,
-} from "../../quizQuestion";
+} from "../quizQuestion";
 const initialState = {
   quizzes: [
     {
@@ -76,7 +76,6 @@ const initialState = {
       restart: false,
       start: true,
     },
-    // Add more quizzes here...
   ],
 };
 

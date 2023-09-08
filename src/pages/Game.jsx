@@ -3,7 +3,7 @@ import LineupGame from "../components/LineupGame";
 import Alert from "../UI/Alert";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { useDispatch } from "react-redux";
-import { clearAlerts } from "../features/cart/gameSlice";
+import { clearAlerts } from "../features/gameSlice";
 import Showcase from "../UI/Showcase";
 
 const Game = () => {

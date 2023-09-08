@@ -16,7 +16,6 @@ const Headlines = () => {
       const response = await fetch(url);
 
       if (!response.ok) {
-        // Check if the response status is not okay (e.g., 404 or 500).
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
 
@@ -27,7 +26,6 @@ const Headlines = () => {
       }
     } catch (error) {
       console.error("Error fetching news data:", error);
-      // You can add additional error handling or logging here.
     }
   };
   useEffect(() => {

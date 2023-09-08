@@ -1,5 +1,3 @@
-// Quiz.js
-
 import Showcase from "../UI/Showcase";
 import Header from "../components/Header";
 import SingleQuiz from "../components/SingleQuiz";
@@ -32,13 +30,13 @@ const Quiz = () => {
           </h1>
           <div className="lg:flex lg:flex-col lg:relative">
             <SingleQuiz
-              quizId={1} // Pass a unique quizId for each quiz component
+              quizId={1}
               quizQuestions={legendPlayers}
               quizTheme="Legendary Players"
               difficulty="7/10"
             />
             <SingleQuiz
-              quizId={2} // Pass a unique quizId for each quiz component
+              quizId={2}
               quizQuestions={legendsTeams}
               quizTheme="Legendary Teams"
               difficulty="6/10"
@@ -51,13 +49,13 @@ const Quiz = () => {
           </h1>
           <div className="lg:flex lg:flex-col lg:relative">
             <SingleQuiz
-              quizId={3} // Pass a unique quizId for each quiz component
+              quizId={3}
               quizQuestions={nba2000s1}
               quizTheme="2000s NBA Part 1"
               difficulty="7/10"
             />
             <SingleQuiz
-              quizId={4} // Pass a unique quizId for each quiz component
+              quizId={4}
               quizQuestions={nba2000s2}
               quizTheme="2000s NBA Part 2"
               difficulty="6/10"
@@ -70,13 +68,13 @@ const Quiz = () => {
           </h1>
           <div className="lg:flex lg:flex-col lg:relative">
             <SingleQuiz
-              quizId={5} // Pass a unique quizId for each quiz component
+              quizId={5}
               quizQuestions={nba2010s1}
               quizTheme="2010s NBA Part 1"
               difficulty="6/10"
             />
             <SingleQuiz
-              quizId={6} // Pass a unique quizId for each quiz component
+              quizId={6}
               quizQuestions={nba2010s2}
               quizTheme="2010s NBA Part 2"
               difficulty="5/10"
@@ -89,13 +87,13 @@ const Quiz = () => {
           </h1>
           <div className="lg:flex lg:flex-col lg:relative">
             <SingleQuiz
-              quizId={7} // Pass a unique quizId for each quiz component
+              quizId={7}
               quizQuestions={nbaAllStar1}
               quizTheme="NBA All-Star Part 1"
               difficulty="6/10"
             />
             <SingleQuiz
-              quizId={8} // Pass a unique quizId for each quiz component
+              quizId={8}
               quizQuestions={nbaAllStar2}
               quizTheme="NBA All-Star Part 2"
               difficulty="4/10"

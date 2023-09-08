@@ -26,7 +26,7 @@ const Navbar = (props) => {
     }
   }, [navIsOpen]);
   return (
-    <nav className="  sticky z-50 top-0 nav  flex  justify-around items-center h-[5rem]  text-white  bg-neutral-950  ">
+    <nav className="   sticky z-50 top-0 nav  flex  justify-around items-center h-[5rem]  text-white  bg-neutral-950  ">
       <div
         onClick={() => setNavIsOpen(!navIsOpen)}
         className=" md:hidden cursor-pointer flex flex-col gap-2"
@@ -117,18 +117,20 @@ const Navbar = (props) => {
           </div>
         </div>
       )}
-      <div
-        onClick={() => setNavIsOpen(false)}
-        to="/"
-        className="logo cursor-pointer h-[3rem] max-w-[4rem] items-center flex "
-      >
-        <img src={logo2} className="w-full h-full" />
-        <span className="text-2xl">NBA</span>
-      </div>
-      <div className="flex gap-5 text-[1.1rem] ">
+      <Link to="/">
+        <div
+          onClick={() => setNavIsOpen(false)}
+          to="/"
+          className="logo cursor-pointer h-[3rem] max-w-[4rem] items-center flex "
+        >
+          <img src={logo2} className="w-full h-full" />
+          <span className="text-2xl">NBA</span>
+        </div>
+      </Link>
+      <div className="flex font1 gap-5 text-[1.1rem] ">
         <NavLink
           onClick={() => setNavIsOpen(false)}
-          className="hover:text-zinc-400 transition-color duration-300 ease"
+          className="hover:text-zinc-400 relative transition-color duration-300 ease"
           to="/"
         >
           Home

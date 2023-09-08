@@ -3,7 +3,6 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-16  ">
       <div className="container mx-auto md:flex  gap-4 ">
-        {/* Column 1 */}
         <div className="w-full md:w-1/4 px-4 ">
           <h3 className="text-3xl font-semibold mb-6">About Us</h3>
           <p className="text-lg mb-4">

@@ -1,6 +1,5 @@
-// SingleQuiz.js
 import { useSelector, useDispatch } from "react-redux";
-import { nextQuestion, restartQ, startQ } from "../features/cart/quizSlice";
+import { nextQuestion, restartQ, startQ } from "../features/quizSlice";
 /* eslint-disable react/prop-types */
 const SingleQuiz = (props) => {
   const { quizId } = props;

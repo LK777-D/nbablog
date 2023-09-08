@@ -5,16 +5,13 @@ import { Link } from "react-router-dom";
 const Teams = (props) => {
   const [teams, setTeams] = useState([]);
 
-  // Refs for both scrollable containers
   const easternScrollContainerRef = useRef(null);
   const westernScrollContainerRef = useRef(null);
 
-  // State and event handlers for Eastern teams container
   const [scrollingEast, setScrollingEast] = useState(false);
   const [startXEast, setStartXEast] = useState(null);
   const [scrollLeftEast, setScrollLeftEast] = useState(0);
 
-  // State and event handlers for Western teams container
   const [scrollingWest, setScrollingWest] = useState(false);
   const [startXWest, setStartXWest] = useState(null);
   const [scrollLeftWest, setScrollLeftWest] = useState(0);
@@ -52,7 +49,7 @@ const Teams = (props) => {
     if (!scrollingEast) return;
     e.preventDefault();
     const x = e.pageX - easternScrollContainerRef.current.offsetLeft;
-    const walk = (x - startXEast) * 2; // Adjust the speed here
+    const walk = (x - startXEast) * 2;
     easternScrollContainerRef.current.scrollLeft = scrollLeftEast - walk;
   };
 
@@ -70,7 +67,7 @@ const Teams = (props) => {
     if (!scrollingWest) return;
     e.preventDefault();
     const x = e.pageX - westernScrollContainerRef.current.offsetLeft;
-    const walk = (x - startXWest) * 2; // Adjust the speed here
+    const walk = (x - startXWest) * 2;
     westernScrollContainerRef.current.scrollLeft = scrollLeftWest - walk;
   };
 

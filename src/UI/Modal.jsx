@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import { clearLineup, closeModal } from "../features/cart/gameSlice";
+import { clearLineup, closeModal } from "../features/gameSlice";
 import { useDispatch } from "react-redux";
 
 const Modal = () => {
