@@ -93,6 +93,9 @@ function App() {
               login={login}
               user={user}
               registerEmail={registerEmail}
+              logInEmail={logInEmail}
+              logInPassword={logInPassword}
+              registerPassword={registerPassword}
             />
           }
         />

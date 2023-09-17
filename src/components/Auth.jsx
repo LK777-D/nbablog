@@ -5,7 +5,7 @@ import logo2 from "../assets/logo2.png";
 const Auth = (props) => {
   const [signIn, setSignIn] = useState(true);
   return (
-    <section className="text-white flex flex-col gap-14 bg-zinc-800 p-12 rounded-lg h-auto max-w-[30rem] ">
+    <section className="text-white flex flex-col gap-14 bg-zinc-800 p-12 rounded-lg h-auto w-[24.5rem] ">
       <div>
         <div className="w-[2rem] h-[4rem] flex items-center">
           <img src={logo2} className="w-full h-full" />
@@ -19,7 +19,7 @@ const Auth = (props) => {
             <div className="flex flex-col ">
               <label className="text-zinc-300 text-lg ">E-mail</label>
               <input
-                placeholder="email..."
+                placeholder="example@email.com"
                 type="text"
                 className="bg-zinc-800 p-2 mb-5  outline-none bg- px-7 border-b border-b-zinc-600 "
                 onChange={(e) => props.setLogInEmail(e.target.value)}
@@ -27,7 +27,7 @@ const Auth = (props) => {
             </div>
             <label>Password</label>
             <input
-              placeholder="password..."
+              placeholder="Password"
               type="password"
               className="bg-zinc-800 p-2 mb-5  outline-none bg- px-7 border-b border-b-zinc-600 "
               onChange={(e) => props.setLogInPassword(e.target.value)}
@@ -56,7 +56,7 @@ const Auth = (props) => {
             <div className="flex flex-col ">
               <label className="text-zinc-300 text-lg ">E-mail</label>
               <input
-                placeholder="email..."
+                placeholder="exapmle@email.com"
                 type="text"
                 className="bg-zinc-800 p-2 mb-5  outline-none bg- px-7 border-b border-b-zinc-600 "
                 onChange={(e) => props.setRegisterEmail(e.target.value)}
@@ -64,7 +64,7 @@ const Auth = (props) => {
             </div>
             <label>Password</label>
             <input
-              placeholder="password..."
+              placeholder="Password"
               type="password"
               className="bg-zinc-800 p-2 mb-5  outline-none bg- px-7 border-b border-b-zinc-600 "
               onChange={(e) => props.setRegisterPassword(e.target.value)}

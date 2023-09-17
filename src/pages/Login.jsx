@@ -14,6 +14,9 @@ const Login = (props) => {
         login={props.login}
         user={props.user}
         registerEmail={props.registerEmail}
+        logInEmail={props.logInEmail}
+        logInPassword={props.logInPassword}
+        registerPassword={props.registerPassword}
       />
     </section>
   );
