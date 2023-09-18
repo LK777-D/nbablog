@@ -17,7 +17,7 @@ const Teams = (props) => {
   const [scrollLeftWest, setScrollLeftWest] = useState(0);
 
   const url =
-    "https://api.sportsdata.io/v3/nba/scores/json/teams?key=cd61399be6684457bb4c48cf96634597";
+    "https://api.sportsdata.io/v3/nba/scores/json/teams?key=057804f08a86405e99d2cd7ad4808994";
 
   const fetchTeams = async () => {
     try {

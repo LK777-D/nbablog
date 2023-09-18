@@ -5,7 +5,7 @@ const Standings = (props) => {
   const [westIsOpen, setWestIsOpen] = useState(false);
 
   const url =
-    "https://api.sportsdata.io/v3/nba/scores/json/Standings/2023?key=cd61399be6684457bb4c48cf96634597";
+    "https://api.sportsdata.io/v3/nba/scores/json/Standings/2023?key=057804f08a86405e99d2cd7ad4808994";
 
   const fetchSeasonData = async () => {
     const response = await fetch(url);

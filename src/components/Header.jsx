@@ -43,7 +43,7 @@ const Header = () => {
   return (
     <header className=" cont text-center relative cont text-white text-xl flex flex-col items-center justify-center  md:w-11/12 h-[15rem] md:h-[23rem] lg:h-[27rem] bgimg my-7 autox ">
       <img src={header[index].img} className={header[index].className} />
-      <span className="absolute font-black bottom-[30%] left-[4%] text-[1.3rem] md:text-[1.7rem] lg:text-[2.5rem]  ">
+      <span className="absolute  font-black bottom-[30%] left-[4%] text-[1.3rem] md:text-[1.7rem] lg:text-[2.5rem]  ">
         {header[index].text}
       </span>
     </header>

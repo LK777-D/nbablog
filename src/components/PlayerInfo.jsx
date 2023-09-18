@@ -7,14 +7,14 @@ const PlayerInfo = () => {
   const [logos, setLogos] = useState([]);
   const [games, setGames] = useState([]);
   const { team } = useParams();
-  const url1 = `https://api.sportsdata.io/v3/nba/scores/json/Players/${team}?key=cd61399be6684457bb4c48cf96634597`;
+  const url1 = `https://api.sportsdata.io/v3/nba/scores/json/Players/${team}?key=057804f08a86405e99d2cd7ad4808994`;
   const url2 =
-    "https://api.sportsdata.io/v3/nba/scores/json/TeamSeasonStats/2023?key=cd61399be6684457bb4c48cf96634597";
+    "https://api.sportsdata.io/v3/nba/scores/json/TeamSeasonStats/2023?key=057804f08a86405e99d2cd7ad4808994";
   const url3 =
-    "https://api.sportsdata.io/v3/nba/scores/json/teams?key=cd61399be6684457bb4c48cf96634597";
+    "https://api.sportsdata.io/v3/nba/scores/json/teams?key=057804f08a86405e99d2cd7ad4808994";
 
   const url4 =
-    "https://api.sportsdata.io/v3/nba/scores/json/Games/2024?key=cd61399be6684457bb4c48cf96634597";
+    "https://api.sportsdata.io/v3/nba/scores/json/Games/2024?key=057804f08a86405e99d2cd7ad4808994";
 
   const fetchPlayersByTeam = async () => {
     try {

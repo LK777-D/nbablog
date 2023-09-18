@@ -9,7 +9,7 @@ const Headlines = () => {
   const [shownHeadlines, setShownHeadlines] = useState(initialHeadlines);
 
   const url =
-    "https://api.sportsdata.io/v3/nba/scores/json/News?key=cd61399be6684457bb4c48cf96634597";
+    "https://api.sportsdata.io/v3/nba/scores/json/News?key=057804f08a86405e99d2cd7ad4808994";
 
   const fetchNews = async () => {
     try {
