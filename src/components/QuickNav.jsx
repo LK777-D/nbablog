@@ -9,14 +9,23 @@ const QuickNav = () => {
         <h1 className="text-[1.2rem]">Our Website</h1>
         <div className=" bg-zinc-600 w-full h-[2px] my-2 "></div>
         <div className="flex flex-col gap-1 ">
-          <Link className=" px-2 py-1 hover:bg-zinc-800 transition-colors duration-300 ease-out">
+          <Link
+            to="/"
+            className=" px-2 py-1 hover:bg-zinc-800 transition-colors duration-300 ease-out"
+          >
             Home
           </Link>
-          <Link className=" px-2 py-1 hover:bg-zinc-800 transition-colors duration-300 ease-out">
+          <Link
+            to="/nbaquiz"
+            className=" px-2 py-1 hover:bg-zinc-800 transition-colors duration-300 ease-out"
+          >
             {" "}
             Quiz{" "}
           </Link>
-          <Link className=" px-2 py-1 hover:bg-zinc-800 transition-colors duration-300 ease-out">
+          <Link
+            to="/game"
+            className=" px-2 py-1 hover:bg-zinc-800 transition-colors duration-300 ease-out"
+          >
             LineUp Builder
           </Link>
         </div>
@@ -25,13 +34,25 @@ const QuickNav = () => {
         <h1 className="text-[1.2rem]">Official Links</h1>
         <div className=" bg-zinc-600 w-full h-[2px] my-2 "></div>
         <div className="flex flex-col gap-1">
-          <Link className=" px-2 py-1 hover:bg-zinc-800 transition-colors duration-300 ease-out">
+          <Link
+            target="_blank"
+            className=" px-2 py-1 hover:bg-zinc-800 transition-colors duration-300 ease-out"
+            to="/https://www.nba.com"
+          >
             NBA
           </Link>
-          <Link className=" px-2 py-1 hover:bg-zinc-800 transition-colors duration-300 ease-out">
+          <Link
+            target="_blank"
+            className=" px-2 py-1 hover:bg-zinc-800 transition-colors duration-300 ease-out"
+            to="/https://www.fiba.com"
+          >
             FIBA
           </Link>
-          <Link className=" px-2 py-1 hover:bg-zinc-800 transition-colors duration-300 ease-out">
+          <Link
+            target="_blank"
+            className=" px-2 py-1 hover:bg-zinc-800 transition-colors duration-300 ease-out"
+            to="/https://www.euroleague.com"
+          >
             EuroLeague
           </Link>
         </div>

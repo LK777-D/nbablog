@@ -76,23 +76,26 @@ const Navbar = (props) => {
             <div className=" w-10/12 h-[1px] autox mt-2 mb-5 bg-zinc-500 "></div>
             <div className="flex flex-col gap-3 items-center text-lg thin ">
               <NavLink
+                target="_blank"
                 onClick={() => setNavIsOpen(false)}
                 className="hover:bg-zinc-800 w-full transition-colors duration-300 ease-out  "
-                to="/"
+                to="/https://www.nba.com"
               >
                 NBA
               </NavLink>
               <NavLink
+                target="_blank"
                 onClick={() => setNavIsOpen(false)}
                 className="hover:bg-zinc-800 w-full transition-colors duration-300 ease-out  "
-                to="nbaquiz"
+                to="https://www.fiba.com"
               >
                 FIBA
               </NavLink>
               <NavLink
+                target="_blank"
                 onClick={() => setNavIsOpen(false)}
                 className="hover:bg-zinc-800 w-full transition-colors duration-300 ease-out  "
-                to="game"
+                to="https://www.euroleague.com"
               >
                 EuroLeague
               </NavLink>
