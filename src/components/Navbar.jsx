@@ -13,8 +13,8 @@ import { UilSignin } from "@iconscout/react-unicons";
 const Navbar = (props) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
 
-  const redirectGame = `${props.user ? "/game" : "/auth"}`;
-  const redirectQuiz = `${props.user ? "/nbaquiz" : "/auth"}`;
+  // const redirectGame = `${props.user ? "/game" : "/auth"}`;
+  // const redirectQuiz = `${props.user ? "/nbaquiz" : "/auth"}`;
 
   const smNavClassName = ` $ bg-zinc-900 anim  md:hidden text-center p-5 w-[100vw] h-[calc(100vh-5rem)] absolute left-0 flex flex-col gap-10 top-[5rem] z-10`;
 
@@ -26,7 +26,7 @@ const Navbar = (props) => {
     }
   }, [navIsOpen]);
   return (
-    <nav className="   sticky z-50 top-0 nav  flex  justify-around items-center h-[5rem]  text-white  bg-neutral-950  ">
+    <nav className=" font2  sticky z-50 top-0 nav  flex  justify-around items-center h-[5rem]  text-white  bg-neutral-950  ">
       <div
         onClick={() => setNavIsOpen(!navIsOpen)}
         className=" md:hidden cursor-pointer flex flex-col gap-2"
@@ -40,10 +40,10 @@ const Navbar = (props) => {
           <div>
             <h1 className="text-2xl  ">Website</h1>
             <div className=" w-10/12 h-[1px] autox mt-2 mb-5 bg-zinc-500 "></div>
-            <div className="flex flex-col gap-3 items-center text-lg thin ">
+            <div className="flex font2 flex-col gap-3 items-center text-lg thin ">
               <NavLink
                 onClick={() => setNavIsOpen(false)}
-                className="hover:bg-zinc-800 w-full transition-colors duration-300 ease-out  "
+                className="hover:bg-zinc-800 w-full  transition-colors duration-300 ease-out  "
                 to="/"
               >
                 Home
@@ -74,7 +74,7 @@ const Navbar = (props) => {
           <div>
             <h1 className="text-2xl  ">Official Links</h1>
             <div className=" w-10/12 h-[1px] autox mt-2 mb-5 bg-zinc-500 "></div>
-            <div className="flex flex-col gap-3 items-center text-lg thin ">
+            <div className="flex font2 flex-col gap-3 items-center text-lg thin ">
               <NavLink
                 target="_blank"
                 onClick={() => setNavIsOpen(false)}
@@ -127,10 +127,10 @@ const Navbar = (props) => {
           className="logo cursor-pointer h-[3rem] max-w-[4rem] items-center flex "
         >
           <img src={logo2} className="w-full h-full" />
-          <span className="text-2xl">NBA</span>
+          <span className="text-2xl fontbold">NBA</span>
         </div>
       </Link>
-      <div className="flex font1 gap-5 text-[1.1rem] ">
+      <div className="flex font2 gap-5 text-[1.1rem] ">
         <NavLink
           onClick={() => setNavIsOpen(false)}
           className="hover:text-zinc-400 relative transition-color duration-300 ease"
@@ -142,7 +142,7 @@ const Navbar = (props) => {
           <NavLink
             onClick={() => setNavIsOpen(false)}
             className="hover:text-zinc-400 transition-color duration-300 ease"
-            to={redirectQuiz}
+            to="/nbaquiz"
           >
             Quiz
           </NavLink>
@@ -150,7 +150,7 @@ const Navbar = (props) => {
         <NavLink
           onClick={() => setNavIsOpen(false)}
           className="hover:text-zinc-400 transition-color duration-300 ease"
-          to={redirectGame}
+          to="/game"
         >
           Game
         </NavLink>

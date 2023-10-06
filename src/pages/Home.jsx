@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <>
-      <h1 className="text-zinc-300 text-xl text-center my-7 lg:text-3xl">
+      <h1 className="text-zinc-300 text-xl fontbold text-center my-7 lg:text-3xl">
         Welcome to the Ultimate NBA Fan Hub!
       </h1>
       <Header />

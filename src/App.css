@@ -29,12 +29,7 @@
 .hover-scale:hover {
   transform: scale(1.2);
 }
-/* .bgimg {
-  background-image: url("./assets/bus.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -115,5 +110,8 @@ aside {
   font-family: "DM Sans", sans-serif;
 }
 .font2 {
-  font-family: "Phudu", cursive;
+  font-family: "Phudu", cursive !important;
+}
+.fontbold {
+  font-family: "Black Ops One", cursive;
 }

@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import LineupGame from "../components/LineupGame";
 import Alert from "../UI/Alert";
 import { useSelector } from "react-redux/es/hooks/useSelector";
@@ -20,7 +20,7 @@ const Game = () => {
       {existingPlayerAlert && <Alert text=" Player Alredy In Lineup " />}
       {lineupFullAlert && <Alert text="Can't Add More Than 5 Players " />}
       {moneyAlert && <Alert text="Not Enough $$$ " />}
-      <Header />
+      {/* <Header /> */}
       <LineupGame />
       <div className="my-10">
         <Showcase text="Explore Everything About The NBA" bg="showbg3" />
